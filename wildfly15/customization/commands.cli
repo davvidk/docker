@@ -1,0 +1,8 @@
+# Mark the commands below to be run as a batch
+batch
+
+# Add the datasource
+data-source add --name=TestDS --driver-name=h2 --jndi-name=java:jboss/datasources/TestDS --connection-url=jdbc:h2:~/test;DB_CLOSE_DELAY=-1 --user-name=sa --password=sa
+
+# Execute the batch
+run-batch
